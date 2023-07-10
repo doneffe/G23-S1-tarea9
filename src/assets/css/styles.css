@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 52px 32px 1fr 50px;
+    grid-template-areas: 
+    'header header'
+    'navbar navbar'
+    'aside main'
+    'footer footer';
+    height: 100vh;
+  }
+
+  .head-container {
+    display: grid;
+    grid-area: header;
+    justify-items: center;    
+    background-color: rgb(45, 67, 86);
+  }
+
+  .nav-container {
+    grid-area: navbar;
+    background-color: rgb(67, 91, 102);
+  }
+
+  .aside-container {
+    display: grid;
+    grid-area: aside;
+    justify-items: auto;    
+    align-items: center;
+    background-color: rgb(167, 111, 111);
+  }
+
+  .main-container {
+    display: grid;
+    grid-area: main;
+    justify-items: center;    
+    align-items: center;
+    background-color: rgb(167, 111, 111);
+  }
+
+  .footer-container {
+    display: grid;
+    grid-area: footer;
+    background-color: rgba(234, 178, 160, 0.5);
+  }
+
+  .head-container__h1 {
+    color: rgb(6, 82, 147);
+  }
+
+  .nav-container__ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(45, 67, 86, 0.5);
+    justify-content: space-between;
+  }
+  
+  .nav-container__li {
+    display: flex;
+    float: left;
+    margin: 0;
+    align-items: center;
+  }
+
+  .logo{
+    width: 32px;
+    height: 32px; 
+  }
+  
+  .nav-container__li--logo {
+    padding-left: 5px;
+  }
+  
+  .nav-container__li--contacto {
+    padding-right: 10px;
+  }
+  
+  .nav-container__li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .nav-container__li a:hover {
+    background-color: #111111;
+  }
+  
+.footer-container__ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    background-color: rgba(234, 178, 160, 0.1);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .footer-container__li {
+    display: flex;
+    float: left;
+    margin: 0;
+    padding: 5px;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .footer-container__li--contacto {
+    padding-right: 10px;
+  }
+  
+  .footer-container__li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .footer-container__li a:hover {
+    color: rgba(234, 178, 160, 0.9);
+  }
